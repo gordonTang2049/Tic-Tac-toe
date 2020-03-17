@@ -1,0 +1,76 @@
+1.Start Game (Done)
+    -Reset board value
+
+
+2. Decide who goes first (Done)
+    -O always go first
+    How to go first O
+    and go second X
+
+    a.
+        When click start, -> start Button
+        Random select Function X . O -> Random select X . O 
+        message tells you  X or O start  -> message tells you X . O
+
+    b.
+        Toggle between 2 function x . o
+
+
+
+
+3.Take turns going P1 X P2 O (Done)
+    How to take terms  O and X
+    - click event O X
+
+
+Winning Checking method 
+    a. Hard coding  -> foreach the winningCombine -> indexof each player compositions
+    b. Data structure -> creating objs for player compositions, any related composition will win (Still experimental)
+    c. HTML the magic square in Div positions, Spread operator  3 set to functions. (need to learn and explore)
+
+
+
+
+<--->
+    After finishing the programming,  rearrage it by using
+            -Class, function composition, prototype
+
+
+
+
+4.After 9 moves there will be result
+
+5. P1 win / P2 win / Tie
+    a. 
+        winning combination can use margic square
+    b. 
+        switch case - all winning case
+        when element has value without any winning case
+
+
+
+
+6. choose to end game / start a new one
+    -How to reset the grid
+
+array i j 
+
+//** using Graph data structure for 1 / 0 winning  
+
+
+
+2d array    0 1 2 i    Use margic square
+Matrix    0 0 1 0       1 2 3
+          1 0 1 0       4 5 6
+          2 0 1 0       7 8 9 
+          j
+
+
+algothrim  winning / losing
+        column win  i[0] i[1] i[2]  -1 j[1] +1   
+        row win     j[0] j[1] [2]   -1 i[1] +1
+        
+        diagional   j[0]i[0] j[1]i[1] j[2]i[2]  /  j[0]i[2] j[1]i[1] j[2]i[0]
+
+        // else if none of above
+         
